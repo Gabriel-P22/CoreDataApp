@@ -14,6 +14,8 @@
 		488416E52A53334100FCBC78 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 488416E32A53334100FCBC78 /* CoreDataApp.xcdatamodeld */; };
 		488416E72A53334300FCBC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488416E62A53334300FCBC78 /* Assets.xcassets */; };
 		488416EA2A53334300FCBC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488416E82A53334300FCBC78 /* LaunchScreen.storyboard */; };
+		488416F72A533D8F00FCBC78 /* ToDoList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488416F52A533D8F00FCBC78 /* ToDoList+CoreDataClass.swift */; };
+		488416F82A533D8F00FCBC78 /* ToDoList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488416F62A533D8F00FCBC78 /* ToDoList+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		488416E62A53334300FCBC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		488416E92A53334300FCBC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488416EB2A53334300FCBC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488416F52A533D8F00FCBC78 /* ToDoList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		488416F62A533D8F00FCBC78 /* ToDoList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,10 @@
 		488416D92A53334100FCBC78 /* CoreDataApp */ = {
 			isa = PBXGroup;
 			children = (
+				488416FB2A533EB700FCBC78 /* Module */,
+				488416F92A533E7B00FCBC78 /* Infrastruct */,
 				488416DA2A53334100FCBC78 /* AppDelegate.swift */,
 				488416DC2A53334100FCBC78 /* SceneDelegate.swift */,
-				488416DE2A53334100FCBC78 /* ViewController.swift */,
 				488416E02A53334100FCBC78 /* Main.storyboard */,
 				488416E62A53334300FCBC78 /* Assets.xcassets */,
 				488416E82A53334300FCBC78 /* LaunchScreen.storyboard */,
@@ -68,6 +73,47 @@
 				488416E32A53334100FCBC78 /* CoreDataApp.xcdatamodeld */,
 			);
 			path = CoreDataApp;
+			sourceTree = "<group>";
+		};
+		488416F12A533D3800FCBC78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				488416F22A533D3D00FCBC78 /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		488416F22A533D3D00FCBC78 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				488416F52A533D8F00FCBC78 /* ToDoList+CoreDataClass.swift */,
+				488416F62A533D8F00FCBC78 /* ToDoList+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		488416F92A533E7B00FCBC78 /* Infrastruct */ = {
+			isa = PBXGroup;
+			children = (
+				488416F12A533D3800FCBC78 /* Model */,
+			);
+			path = Infrastruct;
+			sourceTree = "<group>";
+		};
+		488416FB2A533EB700FCBC78 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				488416FD2A533ECC00FCBC78 /* ViewController */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		488416FD2A533ECC00FCBC78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				488416DE2A53334100FCBC78 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +188,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				488416E52A53334100FCBC78 /* CoreDataApp.xcdatamodeld in Sources */,
+				488416F72A533D8F00FCBC78 /* ToDoList+CoreDataClass.swift in Sources */,
+				488416F82A533D8F00FCBC78 /* ToDoList+CoreDataProperties.swift in Sources */,
 				488416DF2A53334100FCBC78 /* ViewController.swift in Sources */,
 				488416DB2A53334100FCBC78 /* AppDelegate.swift in Sources */,
 				488416DD2A53334100FCBC78 /* SceneDelegate.swift in Sources */,
